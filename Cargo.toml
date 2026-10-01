@@ -31,7 +31,7 @@ lyon = "1.0"
 lyon_tessellation = "1.0"
 crossbeam = "0.8"
 instant = "0.1"
-rstar = "0.12"
+rstar = "0.13"
 
 # wgpu-hal 29.0.4 and gpu-allocator 0.28 use incompatible Windows COM types.
 # Keep the compatible patch until upstream aligns these dependencies.
