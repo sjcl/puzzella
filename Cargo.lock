@@ -559,7 +559,7 @@ dependencies = [
  "serde",
  "smallvec",
  "thiserror 2.0.21",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -591,7 +591,7 @@ dependencies = [
  "encase",
  "serde",
  "thiserror 2.0.21",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -782,7 +782,7 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "webbrowser",
- "wgpu-types",
+ "wgpu-types 29.0.4",
  "winit",
 ]
 
@@ -931,7 +931,7 @@ dependencies = [
  "serde",
  "thiserror 2.0.21",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1047,7 +1047,7 @@ dependencies = [
  "half",
  "smallvec",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1103,7 +1103,7 @@ dependencies = [
  "thiserror 2.0.21",
  "tracing",
  "variadics_please",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1163,7 +1163,7 @@ dependencies = [
  "serde",
  "thiserror 2.0.21",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1211,7 +1211,7 @@ dependencies = [
  "static_assertions",
  "thiserror 2.0.21",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1317,7 +1317,7 @@ dependencies = [
  "thiserror 2.0.21",
  "uuid",
  "variadics_please",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1387,7 +1387,7 @@ dependencies = [
  "weak-table",
  "web-sys",
  "wgpu",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1452,7 +1452,7 @@ dependencies = [
  "thiserror 2.0.21",
  "tracing",
  "wgpu-naga-bridge",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1478,7 +1478,7 @@ dependencies = [
  "bevy_window",
  "radsort",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1586,7 +1586,7 @@ dependencies = [
  "sys-locale",
  "thiserror 2.0.21",
  "tracing",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -1778,7 +1778,7 @@ dependencies = [
  "tracing",
  "wasm-bindgen",
  "web-sys",
- "wgpu-types",
+ "wgpu-types 29.0.4",
  "winit",
 ]
 
@@ -4189,6 +4189,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "naga-types"
+version = "30.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "590afbf58a6f4f62873cd5cff4468061844bafa1cdf399cc954537c22d768d49"
+dependencies = [
+ "hashbrown 0.17.1",
+ "indexmap",
+ "rustc-hash 1.1.0",
+ "thiserror 2.0.21",
+]
+
+[[package]]
 name = "naga_oil"
 version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5134,7 +5146,7 @@ dependencies = [
  "tempfile",
  "uuid",
  "wgpu-hal",
- "wgpu-types",
+ "wgpu-types 30.0.1",
  "zeroize",
 ]
 
@@ -6742,7 +6754,7 @@ dependencies = [
  "web-sys",
  "wgpu-core",
  "wgpu-hal",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -6775,7 +6787,7 @@ dependencies = [
  "wgpu-core-deps-windows-linux-android",
  "wgpu-hal",
  "wgpu-naga-bridge",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -6853,7 +6865,7 @@ dependencies = [
  "wayland-sys",
  "web-sys",
  "wgpu-naga-bridge",
- "wgpu-types",
+ "wgpu-types 29.0.4",
  "windows",
  "windows-core",
  "windows-result",
@@ -6866,7 +6878,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95226013f547544b223281cd16a4fb549aa9dcb562adbda0faae4c73ffbbc161"
 dependencies = [
  "naga",
- "wgpu-types",
+ "wgpu-types 29.0.4",
 ]
 
 [[package]]
@@ -6881,6 +6893,22 @@ dependencies = [
  "log",
  "raw-window-handle",
  "serde",
+ "web-sys",
+]
+
+[[package]]
+name = "wgpu-types"
+version = "30.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "99dad6f1fbdbbdb4c278a6508b059d44688f5cebddf78d005a46a31340269286"
+dependencies = [
+ "bitflags 2.13.2",
+ "bytemuck",
+ "js-sys",
+ "log",
+ "naga-types",
+ "raw-window-handle",
+ "static_assertions",
  "web-sys",
 ]
 
