@@ -16,7 +16,7 @@ serde_json = "1"
 image.workspace = true
 rand.workspace = true
 uuid = { version = "1.26", features = ["v4"] }
-sha2 = "0.10"
+sha2 = "0.11"
 directories = "6"
 tempfile = "3"
 crossbeam.workspace = true
